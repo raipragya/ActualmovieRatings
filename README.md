@@ -1,6 +1,15 @@
 Recommendation System Using Autoencoders
 
 This project implements a recommendation system using a Stacked Autoencoder (SAE) built with PyTorch. Autoencoders are neural networks designed for unsupervised learning tasks, capable of capturing latent patterns in user-item interactions.
+To run this project, you need the following dependencies:
+
+    Python 3.x
+    NumPy
+    Pandas
+    PyTorch
+    
+Clone the repository
+
 Workflow
 
     Dataset:
@@ -21,3 +30,5 @@ Workflow
 
     Testing:
         The model predicts ratings for unseen data and evaluates performance using the Root Mean Square Error (RMSE).
+
+
