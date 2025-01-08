@@ -4,7 +4,7 @@ This project implements a recommendation system using a Stacked Autoencoder (SAE
 Workflow
 
     Dataset:
-        Utilizes the MovieLens dataset (ml-1m and ml-100k) for user, movie, and rating information.
+        Utilizes the MovieLens dataset (ml-100k) for user, movie, and rating information.
         Training and test sets are prepared by transforming data into a user-movie matrix format.
 
     Model Architecture:
@@ -15,7 +15,7 @@ Workflow
         Loss: Mean Squared Error (MSE) is used to optimize reconstruction quality.
 
     Training:
-        Online learning is performed for each user to minimize memory usage.
+        Online learning is performed for each user to minimize memory usage.(efficient on larger datasets of 1 million reviews also)
         Observations with non-zero ratings are prioritized to improve efficiency.
         RMSprop optimizer is used for gradient descent with regularization.
 
